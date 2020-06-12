@@ -1,6 +1,5 @@
-from enum import Enum
+from enum import Enum,auto
 import math
-from quantity_measurement import QuantityMeasurement
 
 class Quantity(Enum):
     FEETTOINCH=12
@@ -20,3 +19,16 @@ class Quantity(Enum):
     TONTOKILOGRAM=1000
     KILOGRAMTOTON=0.00113
 
+class Unit(Enum):
+    FEET=auto()
+    INCH=auto()
+    YARD=auto()
+    CENTIMETER=auto()
+    LITER=auto()
+    MILILITER=auto()
+    GALLON=auto()
+    KILOGRAM=auto()
+    GRAM=auto()
+    TON=auto()
+    CELSIUS=auto()
+    FAHRENHEIT=auto()
